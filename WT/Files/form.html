@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>forms</title>
+</head>
+<body>
+    
+    <h2>HTML FORM</h2>
+    <form action="" method="get">
+    <table>
+        <caption>HTML FORM</caption>
+        <tr>
+            <td><label for="f"><b>First Name:</b></label></td>
+            <td><input type="text" id="f" name="xyz"></td>
+        </tr>
+        <tr>
+            <td><label for="l"><b>Last Name:</b></label></td>
+            <td><input type="text" id="l" name="abc"></td>
+        </tr>
+        <tr>
+            <td><label for="d"><b>Date of Birth:</b></label></td>
+            <td><input type="date" id="d" name="DOB"></td>
+        </tr>
+        <tr>
+            <td><label for="e"><b>Email Id:</b></label></td>
+            <td><input type="email" id="e" name="Email"></td>
+        </tr>
+        <tr>
+            <td><label for="m"><b>Moible Number:</b></label></td>
+            <td><input type="tel" maxlength="10" id="m" name="ph No"></td>
+        </tr>
+        <tr>
+            <td><label for="P"><b>Photo</b></label></td>
+            <td><input type="file" id="p"></td>
+        </tr>
+        <tr>
+            <td><label for="a"><b>Address</b></label></td>
+            <td><textarea name="address" id="a"></textarea></td>
+        </tr>
+        <!-- RADIO -->
+        <tr>
+            <td><label for=""><b>Choose your gender</b></label></td>
+            <td><input type="radio" name="gender" value="female">female
+            <input type="radio"name="gender" value="male">male
+        <input type="radio" name="gender" value="others">others</td>
+           </tr>
+           <!-- CHECKBOX -->
+           <tr>
+            <td><label for=""><b>Languages</b></label></td>
+            <td><input type="checkbox" value="telugu">telugu
+        <input type="checkbox" name="language" value="hindi">hindi
+        <input type="checkbox" name="language" value="english">english
+        <input type="checkbox" name="language" value="kanada">kanada
+        <input type="checkbox" name="language" value="marati">marati
+        <input type="checkbox" name="language" value="tamil">tamil</td>
+           </tr>
+          <tr>
+            <td><input type="submit" >
+                <input type="reset"></td>
+            
+        </tr>
+
+    </table>
+    </form>
+    <!--before value-->
+    http://127.0.0.1:5500/Files/form.html?xyz=&abc=&DOB=&Email=&ph+No=&address=&gender=on
+    <!--after value-->
+    http://127.0.0.1:5500/Files/form.html?xyz=&abc=&DOB=&Email=&ph+No=&address=&gender=female
+    <!-- DROPDOWN 1 -->
+    <form action="">
+        <label for="c1">Choose your city</label>
+        <select name="city" id="c1">
+            <option value="hyderabad">hyderabad</option>
+            <option value="mumbai">munbai</option>
+            <option value="pune">pune</option>
+        </select><br>
+        <button>submit</button><br>
+        <!-- DROPDOWN 2 -->
+        <label for="">choose your city</label>
+        <input list="City" name="CITY">
+        <datalist id="City">
+            <option value="hyderabad">hyderabad</option>
+            <option value="mumbai">mumbai</option>
+            <option value="pune">pune</option>  
+        </datalist><br>
+        <button>submit</button>
+    </form>
+</body>
+</html>
