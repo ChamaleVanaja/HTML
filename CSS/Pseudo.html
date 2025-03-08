@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a:link{
+        color: aqua;
+        text-decoration: dotted;
+    }
+    a:active{
+        color: blue;
+    }
+    a:visited{
+        color: brown;
+    }
+     /* ----------------------------------------------------- */
+    p{
+        text-align:center;
+        font-size: medium;
+    }
+    p:hover{
+        text-decoration: underline wavy rosybrown;
+        border: thick dashed;
+        background-color: blue;
+        color: aqua;
+    }
+    /*----------------------------------------------------------  */
+    div{
+        height:100px;
+        width:100px;
+        background-color: blue;
+        border-radius: 50px 50px 50px 50px;
+    }
+    div:hover{
+        border-style: double;
+        border-color: blueviolet;
+        border-width: 10px;
+        /* tleft tright bright bleft */
+         /* border-radius: 50% ; */
+        /* tleft bright tright bleft */
+        /* border-radius: 25% 50%; */
+        /* tleft tright bleft bright */
+        /* border-radius: 50% 25% 50%; */
+        /* tleft tright bleft bright */
+        border-radius: 50% 50% 50% 0px;
+    }
+</style>
+</head>
+<body>
+    <!-- pseudo clas:
+     anchor pseudo class
+     :link,:active,:visted -->
+    <a href="https://www.saadhi.com">pelli</a>
+    <!-- hover -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, iure? Vero</p>
+     <div></div>
+
+</body>
+</html>
